@@ -711,7 +711,6 @@ $btn-mb: 0.5rem;
   background: url('/assets/img/sidebar/인상-해돋이.jpg');
   background-size: 100% 100%;
   background-position: center;
-
   border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -769,25 +768,25 @@ $btn-mb: 0.5rem;
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
 
-    /*색상 변경*/
-    /*color: rgba(254, 254, 254, 0.99);*/
+    /* 색상 변경 */
+    /* color: rgba(254, 254, 254, 0.99); */
     color: var(--site-title-color);
 
     a {
       @extend %clickable-transition;
       @extend %sidebar-link-hover;
 
-      /*색상 변경*/
+      /* 색상 변경 */
       color: rgba(254, 254, 254, 0.99);
 
-      /*color: var(--site-title-color);*/
+      /* color: var(--site-title-color); */
     }
   }
 
   /* 서브 타이틀에 대한 색상 크기 등을 변경할 수 있습니다. */
   .site-subtitle {
     font-size: 95%;
-    color: var(--site-subtitle-color);
+    
     margin-top: 0.25rem;
     word-spacing: 1px;
     -webkit-user-select: none;
@@ -795,11 +794,12 @@ $btn-mb: 0.5rem;
     -ms-user-select: none;
     user-select: none;
 
-    /*색상 변경*/
+    /* 색상 변경 */
+    /* color: var(--site-subtitle-color); */
     color: rgba(254, 254, 254, 0.99);
   }
 
-  /* 사이드바의 네비게이션 색상 크기 변경*/
+  /* 사이드바의 네비게이션 색상 크기 변경 */
   ul {
     margin-bottom: 2rem;
 
@@ -817,7 +817,7 @@ $btn-mb: 0.5rem;
         border-radius: 0.75rem;
         font-weight: 600;
 
-        /*색상 변경*/
+        /* 색상 변경 */
         color: rgba(254, 254, 254, 0.99);
 
         &:hover {
