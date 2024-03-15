@@ -706,6 +706,11 @@ $btn-mb: 0.5rem;
   width: $sidebar-width;
   z-index: 99;
   background: var(--sidebar-bg);
+  /* 사이드바 배경 이미지 추가(아래 3줄) */
+  background: url('/assets/img/sidebar/인상-해돋이.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+
   border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -762,12 +767,17 @@ $btn-mb: 0.5rem;
     letter-spacing: 0.25px;
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
+    /*색상 변경*/
+    /*color: rgba(254, 254, 254, 99%);*/
+    color: var(--site-title-color);
 
     a {
       @extend %clickable-transition;
       @extend %sidebar-link-hover;
+      /*색상 변경*/
+      color: rgba(254, 254, 254, 99%);
 
-      color: var(--site-title-color);
+      /*color: var(--site-title-color);*/
     }
   }
 
@@ -781,8 +791,12 @@ $btn-mb: 0.5rem;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    /*색상 변경*/
+    color: rgba(254, 254, 254, 99%);
   }
 
+  /* 사이드바의 네비게이션 색상 크기 변경*/
   ul {
     margin-bottom: 2rem;
 
@@ -799,6 +813,9 @@ $btn-mb: 0.5rem;
         align-items: center;
         border-radius: 0.75rem;
         font-weight: 600;
+
+        /*색상 변경*/
+        color: rgba(254, 254, 254, 99%);
 
         &:hover {
           background-color: var(--sidebar-hover-bg);
@@ -818,7 +835,10 @@ $btn-mb: 0.5rem;
 
       &.active {
         .nav-link {
-          color: var(--sidebar-active-color);
+          /*색상 변경*/
+          color: rgba(254, 254, 254, 99%);
+          /*color: var(--sidebar-active-color);*/
+          
           background-color: var(--sidebar-hover-bg);
 
           span {
