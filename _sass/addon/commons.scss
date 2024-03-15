@@ -753,6 +753,7 @@ $btn-mb: 0.5rem;
     width: 100%;
   }
 
+  /* 타이틀에 대한 색상 크기 등을 변경할 수 있습니다. */
   .site-title {
     font-family: inherit;
     font-weight: 900;
@@ -770,6 +771,7 @@ $btn-mb: 0.5rem;
     }
   }
 
+  /* 서브 타이틀에 대한 색상 크기 등을 변경할 수 있습니다. */
   .site-subtitle {
     font-size: 95%;
     color: var(--site-subtitle-color);
