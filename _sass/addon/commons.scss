@@ -709,7 +709,7 @@ $btn-mb: 0.5rem;
 
   /* 사이드바 배경 이미지 추가(아래 3줄) */
   background: url('/assets/img/sidebar/인상-해돋이.jpg');
-  background-size: 100% 100%;
+  background-size: auto;
   background-position: center;
   border-right: 1px solid var(--sidebar-border-color);
 
