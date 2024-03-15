@@ -769,6 +769,7 @@ $btn-mb: 0.5rem;
     margin-bottom: 0.5rem;
 
     /* 색상 변경 */
+
     /* color: rgba(254, 254, 254, 0.99); */
     color: var(--site-title-color);
 
@@ -786,7 +787,6 @@ $btn-mb: 0.5rem;
   /* 서브 타이틀에 대한 색상 크기 등을 변경할 수 있습니다. */
   .site-subtitle {
     font-size: 95%;
-    
     margin-top: 0.25rem;
     word-spacing: 1px;
     -webkit-user-select: none;
@@ -795,6 +795,7 @@ $btn-mb: 0.5rem;
     user-select: none;
 
     /* 색상 변경 */
+    
     /* color: var(--site-subtitle-color); */
     color: rgba(254, 254, 254, 0.99);
   }
