@@ -1,5 +1,5 @@
 ---
-title: [운영체제]스레드 동기화3 
+title: 스레드 동기화3 
 author: BambooStreet
 date: 2024-05-13 00:34:00 +0800
 categories: [운영체제, 스레드 동기화]
