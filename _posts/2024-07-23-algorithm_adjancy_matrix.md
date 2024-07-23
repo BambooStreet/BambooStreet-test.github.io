@@ -2,7 +2,7 @@
 title: 인접 리스트(Adjacency List), 인접 행렬(Adjacency Matrix)
 author: BambooStreet
 date: 2024-07-23 00:1:20 +0800
-categories: [algorithm, Tutorial]
+categories: [algorithm]
 tags: [알고리즘, algorithm]
 ---
 ## 인접 리스트(Adjacency List)란?

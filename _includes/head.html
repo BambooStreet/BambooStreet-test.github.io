@@ -108,4 +108,10 @@
   {% endunless %}
 
   {% include metadata-hook.html %}
+
+<!-- portfolio -->
+  {% if page.title == "About Me" %}
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio-dark.css' | relative_url }}">
+{% endif %}
+
 </head>
