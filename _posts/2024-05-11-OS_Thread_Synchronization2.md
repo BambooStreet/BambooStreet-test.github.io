@@ -3,7 +3,7 @@ title: 스레드 동기화2
 author: BambooStreet
 date: 2024-05-11 00:34:00 +0800
 categories: [운영체제, 스레드 동기화]
-tags: [스레드동기화, 스레드, Thread, 운영체제, OS]
+tags: [favicon]
 ---
 
 # 멀티 스레드 동기화 기법
