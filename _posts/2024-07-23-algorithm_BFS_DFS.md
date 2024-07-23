@@ -20,7 +20,7 @@ tags: [algorithm, 알고리즘, BFS, DFS]
 <br>
 <br>
 
-![BFS_example](assets\img\posts\20240723\BFS_example.png)
+![BFS_example](assets\img\posts\20240723\BFS_example.webp)
 <br>
 
 특징
@@ -58,7 +58,7 @@ tags: [algorithm, 알고리즘, BFS, DFS]
 <br>
 <br>
 
-![DFS_example](assets\img\posts\20240723\DFS_example.png)
+![DFS_example](assets\img\posts\20240723\DFS_example.webp)
 <br>
 
 특징
