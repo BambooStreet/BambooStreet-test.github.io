@@ -29,7 +29,8 @@ tags: [algorithm, 알고리즘, 완전탐색]
 목표 합: K = 9
 
 
-1. 부르트 포스 방식
+### 1. 부르트 포스 방식
+
 ```python
 def subset_sum_brute_force(arr,k):
     n = len(arr)
@@ -48,7 +49,9 @@ print("브루트 포스:", subset_sum_brute_force(arr, K))
 반복문을 통해 모든 가능한 부분집합을 생성해 확인한다. 
 시간복잡도는 O(2^n)d이다.
 
-2. 백트래킹
+### 2. 백트래킹
+
+
 ```python
 def subset_sum_brute_force(arr,k):
     def backtrack(index, current_sum):
@@ -72,7 +75,8 @@ print("백트래킹:", subset_sum_brute_force(arr, K))
 위 예시 문제에서 return에서 or 논리연산자를 통해 경우를 나누고 옳은 경로인지 판단한다.
 시간복잡도는 브루트 포스와 같이 O(2^n)이지만 평균적으로 더 빠르다. 
 
-3. 재귀를 이용한 조합 생성 
+### 3. 재귀를 이용한 조합 생성 
+
 ```python
 def subset_sum_recursive(arr,k):
     def generate_subsets(index, current_sum):
@@ -94,7 +98,8 @@ print("재귀 조합:", subset_sum_recursive(arr, K))
 시간 복잡도는 O(2^n)이다.
 
 
-4. 동적 계획법(DP) - 참고용 
+### 4. 동적 계획법(DP) - 참고용 
+
 ```python
 def subset_sum_dp(arr,K): 
 
