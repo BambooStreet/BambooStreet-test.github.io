@@ -13,7 +13,7 @@ tags: [알고리즘, algorithm]
 * 정점의 인접 정점을 쉽게 찾을 수 있다.
 * 특정 간선의 존재를 확인하는 데에는 시간이 오래 걸린다.
 
-![adj list example](assets\img\posts\20240723\adj_list.png)
+![adj list example](assets/img/posts/20240723/adj_list.png)
 <br>
 <br>
 
@@ -35,7 +35,7 @@ graph = {
 
 각 정점(vertex)는 0 또는 1이라는 값을 가지는데, 0은 두 정점 사이의 경로가 없음을 의미하고, 1은 두 정점 사이의 경로가 있음을 의미한다.
 
-![adj matrix example](assets\img\posts\20240723\adj_matrix.png)
+![adj matrix example](assets/img/posts/20240723/adj_matrix.png)
 <br>
 <br>
 

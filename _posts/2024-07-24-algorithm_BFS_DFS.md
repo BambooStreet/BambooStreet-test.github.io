@@ -16,11 +16,11 @@ tags: [algorithm, 알고리즘, BFS, DFS]
 * 큐가 빌 때까지 이 과정을 반복한다.
 
 수도 코드 예시
-![BFS_pseudocode](assets\img\posts\20240723\BFS_pseudocode.png)
+![BFS_pseudocode](assets/img/posts/20240723/BFS_pseudocode.png)
 <br>
 <br>
 
-![BFS_example](assets\img\posts\20240723\BFS_example.png)
+![BFS_example](assets/img/posts/20240723/BFS_example.png)
 <br>
 
 특징
@@ -54,11 +54,11 @@ tags: [algorithm, 알고리즘, BFS, DFS]
 * 더 이상 방문한 정점이 없으면 이전 정점으로 돌아간다.
 
 수도 코드 예시
-![DFS_pseudocode](assets\img\posts\20240723\DFS_pseudocode.png)
+![DFS_pseudocode](assets/img/posts/20240723/DFS_pseudocode.png)
 <br>
 <br>
 
-![DFS_example](assets\img\posts\20240723\DFS_example.png)
+![DFS_example](assets/img/posts/20240723/DFS_example.png)
 <br>
 
 특징
