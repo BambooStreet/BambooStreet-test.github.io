@@ -1,7 +1,7 @@
 ---
 title: 완전탐색
 author: BambooStreet
-date: 2024-07-29 14:00:00 +0800
+date: 2024-07-29 00:00:00 +0800
 categories: [algorithm]
 tags: [algorithm, 알고리즘, 완전탐색]
 ---
