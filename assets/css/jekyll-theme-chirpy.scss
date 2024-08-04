@@ -19,3 +19,46 @@
     background-color: #your-desired-color;
     border-color: #your-desired-color;
 }
+#toc-wrapper {
+    // 기존 스타일 유지
+    > section {
+      padding-left: 1rem;
+      border-left: 1px solid var(--main-border-color);
+      margin-bottom: 2rem; // 약간의 여백 추가
+    }
+  
+    .panel-heading {
+      font-size: 1.1rem; // 조금 더 큰 글씨
+      margin-bottom: 0.5rem;
+      color: #B8C8D8; // 파스텔 블루 색상 유지
+    }
+  
+    #toc {
+      ul {
+        padding-left: 0.5rem;
+      }
+  
+      li {
+        margin-bottom: 0.3rem;
+        list-style-type: none;
+      }
+  
+      a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 0.9rem;
+        
+        &:hover {
+          color: #B8C8D8; // 호버 시 파스텔 블루로 변경
+        }
+      }
+    }
+  }
+
+  .access {
+    &:only-child {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 2rem;
+    }
+  }

@@ -57,8 +57,10 @@ tail_includes:
           {% elsif page.authors %}
             {% assign authors = page.authors %}
           {% endif %}
-
+          
+          {% comment %}
           {{ site.data.locales[lang].post.written_by }}
+          {% endcomment %}
 
           <em>
             {% if authors %}
@@ -122,6 +124,14 @@ tail_includes:
             {{- tag -}}
           </a>
         {% endfor %}
+        <script src="https://utteranc.es/client.js"
+                repo="BambooStreet/BambooStreet.github.io"
+                issue-term="pathname"
+                label="comments"
+                theme="dark-blue"
+                crossorigin="anonymous"
+                async>
+        </script> 
       </div>
     {% endif %}
 
