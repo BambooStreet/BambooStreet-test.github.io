@@ -779,7 +779,7 @@ $btn-mb: 0.5rem;
       @extend %sidebar-link-hover;
 
       /* 색상 변경 */
-      color: rgba(254, 254, 254, 0.99);
+      color: #d3e0ed;
 
       /* color: var(--site-title-color); */
     }
@@ -798,7 +798,7 @@ $btn-mb: 0.5rem;
     /* 색상 변경 */
     
     /* color: var(--site-subtitle-color); */
-    color: rgba(254, 254, 254, 0.99);
+    color: #b8c5d2;
   }
 
   /* 사이드바의 네비게이션 색상 크기 변경 */
@@ -820,7 +820,7 @@ $btn-mb: 0.5rem;
         font-weight: 600;
 
         /* 색상 변경 */
-        color: rgba(254, 254, 254, 0.99);
+        color: #b8c5d2;
 
         &:hover {
           background-color: var(--sidebar-hover-bg);

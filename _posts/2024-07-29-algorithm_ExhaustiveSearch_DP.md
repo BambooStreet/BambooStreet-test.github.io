@@ -2,8 +2,9 @@
 title: 완전탐색
 author: BambooStreet
 date: 2024-07-29 00:00:00 +0800
-categories: [algorithm]
-tags: [algorithm, 알고리즘, 완전탐색]
+categories: [algorithm,study]
+tags: [algorithm, 알고리즘, 완전탐색,study]
+image: assets\img\posts\20240804\testcat.jpg
 ---
 
 ## 완전탐색이란?

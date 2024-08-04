@@ -9,11 +9,15 @@
   --main-border-color: rgb(44, 45, 45);
 
   /* Common color */
-  --text-color: rgb(175, 176, 177);
-  --text-muted-color: #868686;
-  --text-muted-hightlight-color: #aeaeae;
-  --heading-color: #cccccc;
-  --label-color: #a7a7a7;
+  //--text-color: rgb(175, 176, 177);
+  //--text-muted-color: #868686;
+  --text-color: #b8c5d2;
+  --text-muted-color: #b8c5d2; //포스트카드 내용 색상 변경
+  //--text-muted-hightlight-color: #aeaeae;
+  --text-muted-hightlight-color: #b8c5d2;
+  //--heading-color: #cccccc;
+  --heading-color: #b8c5d2; //포스트카드 제목 색상 변경
+  --label-color: #a7a7a7; 
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: #868686;
   --link-color: rgb(138, 180, 248);
@@ -35,11 +39,11 @@
   );
 
   /* Sidebar */
-  --site-title-color: #717070;
-  --site-subtitle-color: #868686;
+  --site-title-color: #96b9db;
+  --site-subtitle-color: #b8c5d2;
   --sidebar-bg: #1e1e1e;
   --sidebar-border-color: #292929;
-  --sidebar-muted-color: #868686;
+  --sidebar-muted-color: #b8c5d2; //사이드바 컬러
   --sidebar-active-color: rgb(255, 255, 255, 0.95);
   --sidebar-hover-bg: #262626;
   --sidebar-btn-bg: #232328;
@@ -54,8 +58,9 @@
   --input-focus-border-color: rgb(112, 114, 115);
 
   /* Home page */
+  --homepage-color: #b8c5d2;
   --post-list-text-color: rgb(175, 176, 177);
-  --btn-patinator-text-color: var(--text-color);
+  --btn-patinator-text-color: #b8c5d2;
   --btn-paginator-hover-color: #2e2e2e;
 
   /* Posts */

@@ -2,7 +2,7 @@
 title: BFS(Breadth-First Search), DFS(Depth-First Search)
 author: BambooStreet
 date: 2024-07-23 15:18:00 +0800
-categories: [algorithm]
+categories: [algorithm,study]
 tags: [algorithm, 알고리즘, BFS, DFS]
 ---
 

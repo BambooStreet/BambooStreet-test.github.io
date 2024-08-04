@@ -2,7 +2,7 @@
 title: CPU, GPU 환경에서 Tensorflow 모델의 출력 차이
 author: cotes
 date: 2024-05-05 00:34:00 +0800
-categories: [버그 리포트, Tensorflow]
+categories: [버그 리포트, Tensorflow,study]
 tags: [favicon]
 ---
 

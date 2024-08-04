@@ -2,6 +2,18 @@
   Style for Homepage
 */
 
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.section-divider {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 #post-list {
   margin-top: 2rem;
 
@@ -11,13 +23,14 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.5rem; //카드 간 간격
     }
   }
 
   .card {
     border: 0;
     background: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); // 그림자 추가로 카드 느낌 강화
 
     %img-radius {
       border-radius: $base-radius $base-radius 0 0;
@@ -25,9 +38,17 @@
 
     .preview-img {
       @extend %img-radius;
+      display: flex;
+      justify-content: flex-end; // 내용을 오른쪽으로 정렬
+      width: 100%;
+      //text-align: right; // 내용을 오른쪽으로 정렬
 
       img {
         @extend %img-radius;
+        width: 200px;
+        height: 200px; // 이미지 높이 증가
+        object-fit: cover; // 이미지 비율 유지
+        //margin-left: auto; // 왼쪽 마진을 자동으로 설정하여 오른쪽으로 밀기
       }
     }
 
@@ -39,7 +60,8 @@
         @extend %text-clip;
 
         color: var(--heading-color) !important;
-        font-size: 1.25rem;
+        font-size: 1.25rem; // 제목 크기 증가
+        margin-bottom: 1rem; // 제목 아래 여백 추가
       }
 
       %muted {
@@ -134,6 +156,38 @@
     border-radius: 0 $base-radius $base-radius 0;
   }
 
+  .section-divider {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid rgba(149, 151, 160, 0.819);
+  }
+
+  h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .category-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+  }
+
+  .category-title.study {
+    color: #b8c5d2;
+    border-color: #b8c5d2;
+  }
+
+  .category-title.hobbies {
+    color: #b8c5d2;
+    border-color: #b8c5d2;
+  }
+
   #post-list {
     .card {
       .card-body {
@@ -187,3 +241,5 @@
     }
   } /* .pagination */
 }
+
+
