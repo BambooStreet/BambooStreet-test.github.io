@@ -23,7 +23,7 @@ h2 {
     }
 
     &:not(:last-child) {
-      margin-bottom: 1.5rem; //카드 간 간격
+      margin-bottom: 1.5rem; // 카드 간 간격
     }
   }
 
@@ -40,15 +40,18 @@ h2 {
       @extend %img-radius;
       display: flex;
       justify-content: flex-end; // 내용을 오른쪽으로 정렬
+
       width: 100%;
-      //text-align: right; // 내용을 오른쪽으로 정렬
 
       img {
         @extend %img-radius;
+
         width: 200px;
+
         height: 200px; // 이미지 높이 증가
+
         object-fit: cover; // 이미지 비율 유지
-        //margin-left: auto; // 왼쪽 마진을 자동으로 설정하여 오른쪽으로 밀기
+
       }
     }
 
@@ -168,13 +171,13 @@ h2 {
   }
 
   .category-title {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #333;
+    color: #333333;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #333333;
     padding-bottom: 0.5rem;
   }
 
