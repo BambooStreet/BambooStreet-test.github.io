@@ -38,18 +38,16 @@ h2 {
 
     .preview-img {
       @extend %img-radius;
+
       display: flex;
       justify-content: flex-end; // 내용을 오른쪽으로 정렬
-
       width: 100%;
 
       img {
         @extend %img-radius;
 
         width: 200px;
-
         height: 200px; // 이미지 높이 증가
-
         object-fit: cover; // 이미지 비율 유지
 
       }
@@ -171,7 +169,7 @@ h2 {
   }
 
   .category-title {
-    font-family: "Nunito", sans-serif;
+    font-family: Nunito, sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: #333333;
