@@ -16,6 +16,7 @@ tags: [algorithm, 알고리즘, BFS, DFS]
 * 큐가 빌 때까지 이 과정을 반복한다.
 
 수도 코드 예시
+
 ![BFS_pseudocode](assets/img/posts/20240723/BFS_pseudocode.png)
 <br>
 <br>

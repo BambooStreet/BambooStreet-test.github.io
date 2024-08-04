@@ -47,9 +47,15 @@ h2 {
         @extend %img-radius;
 
         width: 200px;
-        height: 200px; // 이미지 높이 증가
+        height: 100%; // 이미지 높이 증가
         object-fit: cover; // 이미지 비율 유지
+        filter: brightness(0.7); /* 밝기를 80%로 낮춤 */
+        transition: filter 0.3s ease; /* 부드러운 전환 효과 추가 */
 
+      }
+
+      &:hover img {
+        filter: brightness(0.8); /* 호버 시 원래 밝기로 복귀 (선택사항) */
       }
     }
 
