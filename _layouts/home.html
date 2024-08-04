@@ -45,7 +45,7 @@ refactor: true
 
 <h2 class="category-title study">Studies and Projects</h2>
 <div id="post-list" class="flex-grow-1 px-xl-1">
-  {% assign study_posts = posts | where_exp: "post", "post.categories contains 'study' or post.categories contains 'algorithm'" %}
+  {% assign study_posts = posts | where_exp: "post", "post.categories contains 'study'" %}
   {% for post in study_posts limit:4 %}    
       <article class="card-wrapper card">
         <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
@@ -102,13 +102,13 @@ refactor: true
     
   {% endfor %}
   {% if study_posts.size > 4 %}
-    <a href="{{ '/categories/hobbies' | relative_url }}" class="btn btn-outline-custom">더 보기</a>
+    <a href="{{ '/categories/study' | relative_url }}" class="btn btn-outline-custom">더 보기</a>
   {% endif %}
 </div>
 
 <h2 class = "category-title hobbies">Daily life and Interests</h2>
 <div id="post-list" class="flex-grow-1 px-xl-1">
-  {% assign hobby_posts = posts | where_exp: "post", "post.categories contains 'hobbies' or post.tags contains 'hobbies'" %}
+  {% assign hobby_posts = posts | where_exp: "post", "post.categories contains 'daily' or post.categories contains 'interests'" %}
   {% for post in hobby_posts limit:4 %}
       <article class="card-wrapper card">
         <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">

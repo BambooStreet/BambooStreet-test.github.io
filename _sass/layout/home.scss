@@ -160,7 +160,7 @@ h2 {
   .section-divider {
     margin: 2rem 0;
     border: 0;
-    border-top: 1px solid rgba(149, 151, 160, 0.819);
+    border-top: 1px solid var(--heading-color);
   }
 
   h2 {
@@ -180,13 +180,13 @@ h2 {
   }
 
   .category-title.study {
-    color: #b8c5d2;
-    border-color: #b8c5d2;
+    color: var(--heading-color);
+    border-color: var(--heading-color);
   }
 
   .category-title.hobbies {
-    color: #b8c5d2;
-    border-color: #b8c5d2;
+    color: var(--heading-color);
+    border-color: var(--heading-color);
   }
 
   #post-list {
