@@ -1,6 +1,8 @@
 /* The common styles */
 
 html {
+  font-size: 16px;
+
   @media (prefers-color-scheme: light) {
     &:not([data-mode]),
     &[data-mode='light'] {
@@ -21,9 +23,7 @@ html {
     &[data-mode='light'] {
       @include light-scheme;
     }
-  }
-
-  font-size: 16px;
+  } 
 }
 
 body {
@@ -221,13 +221,12 @@ i {
 
 #access-lastmod {
   a {
+    color: inherit;
+    @extend %no-bottom-border;
+
     &:hover {
       @extend %link-hover;
     }
-
-    @extend %no-bottom-border;
-
-    color: inherit;
   }
 }
 
@@ -717,14 +716,14 @@ $btn-mb: 0.5rem;
   
   /* border-right: 1px solid var(--sidebar-border-color); */
 
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
   }
-
-  /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 
   %sidebar-link-hover {
     &:hover {
@@ -1089,6 +1088,10 @@ search {
   padding-bottom: 3rem;
 
   a {
+
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    
     &:hover {
       @extend %link-hover;
     }
@@ -1097,8 +1100,7 @@ search {
     @extend %no-bottom-border;
     @extend %heading;
 
-    font-size: 1.4rem;
-    line-height: 2.5rem;
+    
   }
 
   > article {

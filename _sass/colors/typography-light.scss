@@ -2,6 +2,7 @@
  * The syntax light mode typography colors
  */
 
+
 @mixin light-scheme {
   /* Framework color */
   --main-bg: white;
@@ -86,19 +87,6 @@
   --prompt-danger-bg: rgb(248, 215, 218, 0.56);
   --prompt-danger-icon-color: #df3c30;
 
-  /* Tags */
-  --tag-border: #dee2e6;
-  --tag-shadow: var(--btn-border-color);
-  --tag-hover: rgb(222, 226, 230);
-  --search-tag-bg: #f8f9fa;
-
-  [class^='prompt-'] {
-    --link-underline-color: rgb(219, 216, 216);
-  }
-
-  .dark {
-    display: none;
-  }
 
   /* Categories */
   --categories-border: rgba(0, 0, 0, 0.125);
@@ -109,4 +97,20 @@
   --timeline-color: rgba(0, 0, 0, 0.075);
   --timeline-node-bg: #c2c6cc;
   --timeline-year-dot-color: #ffffff;
-} /* light-scheme */
+
+  /* Tags */
+  --tag-border: #dee2e6;
+  --tag-shadow: var(--btn-border-color);
+  --tag-hover: rgb(222, 226, 230);
+  --search-tag-bg: #f8f9fa;
+
+  &{
+    [class^='prompt-'] {
+      --link-underline-color: rgb(219, 216, 216);
+    }
+  }
+
+  .dark {
+    display: none;
+  }
+}
