@@ -120,7 +120,9 @@ ELT (Extract, Load, Transform):
     * 실시간 로드: 데이터가 생성되는 즉시 지속적으로 적재
 
 * 도구:
-    * ETL/ELT 도구 (예: Apache NiFi, Talend, Informatica)
+    * Apache Spark: 대규모 데이터 처리를 위한 분산 컴퓨팅 프레임워크
+    * Apache Airflow: 워크플로우 관리 및 스케줄링 플랫폼
+    * AWS Glue: 서버리스 데이터 통합 서비스
     * 데이터 통합 플랫폼 (예: Airbyte, Fivetran)
 
 
