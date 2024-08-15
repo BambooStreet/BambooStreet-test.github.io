@@ -1,5 +1,5 @@
 ---
-title: 데이터 엔지니어링 
+title: 데이터 엔지니어링, 파이프라인과 저장소
 author: BambooStreet
 date: 2024-08-15 00:00:00 +0800
 categories: [study]
@@ -9,8 +9,10 @@ image: assets/img/posts/20240815/ETL_ex.png
 
 ## 데이터 엔지니어링?
 
-대규모 데이터를 효율적으로 수집, 저장, 처리, 분석할 수 있도록 하는 일련의 프로세스와 기술을 의미
+대규모 데이터를 효율적으로 수집, 저장, 처리, 분석할 수 있도록 하는 일련의 프로세스와 기술을 의미한다.
 
+
+JD 예시
 ![alt text](/assets/img/posts/20240815/JD.png)
 
 
@@ -71,7 +73,9 @@ ELT (Extract, Load, Transform):
 
 ### Transform
 
-* 정의: 추출된 데이터를 목적에 맞게 변환, 정제, 통합하는 과정
+![alt text](/assets/img/posts/20240815/Transform.png)
+
+* 정의: 추출 혹은 로드된 데이터를 목적에 맞게 변환, 정제, 통합하는 과정
 
 * 주요 작업:
     * 데이터 정제: 오류 수정, 중복 제거
@@ -99,6 +103,8 @@ ELT (Extract, Load, Transform):
 
 
 ### Load
+
+![alt text](/assets/img/posts/20240815/Load.png)
 
 * 정의: 데이터를 목적지 시스템(대개 데이터베이스, 데이터 웨어하우스, 데이터 레이크 등)에 삽입하거나 업데이트하는 과정
 
@@ -140,6 +146,8 @@ ELT (Extract, Load, Transform):
 
 
 ## 데이터 웨어하우스? 레이크?
+
+![alt text](/assets/img/posts/20240815/vs.png)
 
 ### 데이터 웨어하우스
 
