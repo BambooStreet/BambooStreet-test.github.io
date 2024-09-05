@@ -1,5 +1,5 @@
 ---
-title: ThetaCloud 문서 정리
+title: Azur로 내 컨테이너 배포하기
 author: BambooStreet
 date: 2024-08-26 00:00:00 +0800
 categories: []
@@ -7,26 +7,106 @@ tags: []
 image: assets/img/posts/20240804/testcat.jpg
 ---
 
-## 계정 생성, 번호 구매
-![DFS_example](assets/img/posts/20240804/twillio1.png)
-
-홈페이지에서 좌측 사이드바에서 Develop -> United States -> # Phone Numbers -> Manage -> Buy a number로 들어간다.
-
-![DFS_example](assets/img/posts/20240804/twillio1.png)
-
-"Voice"에 체크하고, 아무 번호나 구매한다.
-trial 계정의 경우 무료로 제공되는 15$가 있으므로 따로 비용이 들진 않는다.
-
-![DFS_example](assets/img/posts/20240804/twillio1.png)
-
-번호를 구매하면 사이드바에 "Active numbers"에 구입한 번호가 뜬다.
-
-![DFS_example](assets/img/posts/20240804/twillio1.png)
-
-Active Numbers에서 번호를 클릭하면 다음과 같이 Vocie Configuration이 뜨는데, 앞으로 구축할 Falsk api가 제공하는 url을 여기에 입력하게 된다.
-지금은 일단 그대로 두고 계속 진행하도록 하자.
-
-## url 배포
+기존에 PC에 Docker와 Azur가 설치되어 있다는 전제로 다음을 진행한다.
 
 
-## 
+## 1. Azure Container Registry(ACR) 생성
+
+Azure Container Registry(ACR) 생성 가이드
+
+1. Azure 포털(https://portal.azure.com/#home)에 로그인합니다.
+
+2. 왼쪽 상단의 메뉴에서 "리소스 만들기"를 클릭합니다.
+
+3. 왼쪽 메뉴바에서 컨테이너 -> Container Registry
+
+4. "만들기" 버튼을 클릭합니다.
+
+5. 다음 정보를 입력합니다:
+   - 구독: 사용할 Azure 구독을 선택합니다.
+   - 리소스 그룹: 새 그룹을 만들거나 기존 그룹을 선택합니다.
+   - 레지스트리 이름: 고유한 이름을 입력합니다 (예: myacr1234).
+   - 위치: 가장 가까운 데이터 센터를 선택합니다. (예: East Asia)
+   - Pricing plan: 일반적으로 "Standard(표준)"를 선택합니다.
+
+6. "검토 + 만들기" 버튼을 클릭합니다.
+
+7. 설정을 검토하고 "만들기" 버튼을 클릭하여 ACR을 생성합니다.
+
+8. 배포가 완료되면 "리소스로 이동" 버튼을 클릭하여 새로 생성된 ACR의 개요 페이지로 이동합니다.
+
+※주의: ACR 이름은 고유해야 하며, 소문자와 숫자만 사용할 수 있습니다.
+
+
+
+## 2. Docker 이미지 빌드 및 ACR에 푸시
+
+```
+# 로컬에서 Docker 이미지 빌드
+docker build -t myapp:v1 .
+
+# Azure CLI를 사용하여 ACR에 로그인
+az acr login --name myacr1234
+
+# 이미지에 ACR 레지스트리 이름을 포함한 태그 지정
+docker tag myapp:v1 myacr1234.azurecr.io/myapp:v1
+
+# 이미지를 ACR에 푸시
+docker push myacr1234.azurecr.io/myapp:v1
+```
+
+
+## 3. Azure Container Instance를 사용한 배포
+
+1. Azure 포털(https://portal.azure.com/#home)에 로그인합니다.
+
+2. 왼쪽 상단의 메뉴에서 "리소스 만들기"를 클릭합니다.
+
+3. 왼쪽 메뉴바에서 컨테이너 -> Container Instances
+
+4. "만들기" 버튼을 클릭합니다.
+
+5. 기본 탭에서 다음 정보 입력:
+   - 구독 선택
+   - 리소스 그룹 선택 또는 생성
+   - 컨테이너 이름 입력
+   - 리전 선택
+   - 이미지 소스: Azure Container Registry
+   - 레지스트리: 이전에 생성한 ACR 선택
+   - 이미지: 푸시한 이미지 선택 (예: myapp)
+   - 이미지 태그: 사용할 태그 선택 (예: v1)
+
+4. 네트워킹 탭에서 DNS 이름 레이블 설정 (선택사항)
+
+5. 고급 탭에서 필요한 경우 환경 변수, 명령 재정의 등 설정
+
+6. 검토 + 만들기 버튼 클릭
+
+7. 설정 검토 후 만들기 버튼 클릭
+
+배포가 완료되면 개요 페이지에서 FQDN(정규화된 도메인 이름)을 확인할 수 있습니다.
+이 URL을 통해 애플리케이션에 접근할 수 있습니다.
+
+
+
+# Azure Container Registry 관리자 계정 활성화 업데이트된 가이드
+
+1. Azure Portal 방법:
+   a. Azure Portal(https://portal.azure.com/)에 로그인합니다.
+   b. 왼쪽 메뉴에서 "Container registries"를 선택합니다.
+   c. 목록에서 'helloworld2' 레지스트리를 클릭합니다.
+   d. 왼쪽 메뉴에서 "Settings" 아래의 "Access keys"를 선택합니다.
+   e. "Admin user" 섹션을 찾습니다.
+   f. 만약 토글 스위치가 있다면, 이를 "Enabled" 위치로 변경합니다.
+   g. 변경 사항을 저장합니다.
+
+2. Azure CLI 방법:
+   다음 명령을 사용하여 관리자 계정을 활성화할 수 있습니다:
+   ```
+   az acr update -n helloworld2 --admin-enabled true
+   ```
+
+3. 확인 방법:
+   관리자 계정이 활성화되면, "Access keys" 페이지에서 사용자 이름과 두 개의 비밀번호를 볼 수 있어야 합니다.
+
+주의: 관리자 계정 사용은 보안 위험을 증가시킬 수 있습니다. 가능하면 서비스 주체나 관리 ID를 사용하는 것이 좋습니다.
