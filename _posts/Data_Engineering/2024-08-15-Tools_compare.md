@@ -4,7 +4,7 @@ author: BambooStreet
 date: 2024-08-15 00:00:00 +0800
 categories: [study]
 tags: []
-image: assets/img/posts/20240804/testcat.jpg
+image: assets/img/avatar/testcat.jpg
 ---
 
 ### Airflow vs Spark vs Glue: Extract 및 Transform 지원 비교

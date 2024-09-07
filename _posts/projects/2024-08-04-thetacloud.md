@@ -4,7 +4,7 @@ author: BambooStreet
 date: 2024-08-26 00:00:00 +0800
 categories: [study]
 tags: []
-image: assets/img/posts/20240804/testcat.jpg
+image: 
 ---
 
 기존에 PC에 Docker와 Azur가 설치되어 있다는 전제로 다음을 진행한다.
