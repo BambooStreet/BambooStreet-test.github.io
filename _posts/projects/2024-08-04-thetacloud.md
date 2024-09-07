@@ -2,7 +2,7 @@
 title: Azur로 내 컨테이너 배포하기
 author: BambooStreet
 date: 2024-08-26 00:00:00 +0800
-categories: []
+categories: [study]
 tags: []
 image: assets/img/posts/20240804/testcat.jpg
 ---
