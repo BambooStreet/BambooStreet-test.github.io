@@ -253,7 +253,6 @@ i {
 .footnote {
   @at-root a#{&} {
     @include ml-mr(1px);
-
     @include pl-pr(2px);
 
     border-bottom-style: none !important;
