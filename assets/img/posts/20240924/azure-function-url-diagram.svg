@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <rect x="10" y="10" width="580" height="280" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <text x="300" y="40" text-anchor="middle" font-size="20" font-weight="bold">Azure Function App</text>
+  
+  <rect x="30" y="70" width="250" height="80" fill="#e6f3ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="155" y="100" text-anchor="middle" font-size="16">/api/question</text>
+  <text x="155" y="130" text-anchor="middle" font-size="14">question() function</text>
+  
+  <rect x="320" y="70" width="250" height="80" fill="#e6f3ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="445" y="100" text-anchor="middle" font-size="16">/api/get_test/{param}</text>
+  <text x="445" y="130" text-anchor="middle" font-size="14">get_echo_call() function</text>
+  
+  <path d="M300 180 L150 180 L150 160" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M300 180 L440 180 L440 160" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <text x="300" y="220" text-anchor="middle" font-size="16">https://your-function-app.azurewebsites.net</text>
+  <text x="300" y="250" text-anchor="middle" font-size="14">(Base URL)</text>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>
