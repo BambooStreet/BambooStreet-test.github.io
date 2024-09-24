@@ -11,18 +11,18 @@
   /* Common color */
   // --text-color: rgb(175, 176, 177);
   // --text-muted-color: #868686;
-  --text-color: #A0B0C0; // 포스트 내용 색상 변경
+  --text-color: #c7d6e4; // 포스트 내용 색상 변경
   --text-muted-color: #a0b0c0b0; // 포스트카드 내용 색상 변경
 
   // --text-muted-hightlight-color: #aeaeae;
-  --text-muted-hightlight-color: #D0D0D0;
+  --text-muted-hightlight-color: #d0d0d0;
 
   // --heading-color: #cccccc;
-  --heading-color: #B8C8D8; // 포스트카드 제목 색상 변경
-  --label-color: #a7a7a7; 
+  --heading-color: #c5d8eb; // 포스트카드 제목 색상 변경
+  --label-color: #a7a7a7;
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: #868686;
-  --link-color: #87CEEB;
+  --link-color: #87ceeb;
   --link-underline-color: rgb(82, 108, 150);
   --button-bg: #1e1e1e;
   --btn-border-color: #2e2f31;
@@ -41,11 +41,11 @@
   );
 
   /* Sidebar */
-  --site-title-color: #B8C8D8;
-  --site-subtitle-color: #B8C8D8;
+  --site-title-color: #b8c8d8;
+  --site-subtitle-color: #b8c8d8;
   --sidebar-bg: #1e1e1e;
   --sidebar-border-color: #292929;
-  --sidebar-muted-color: #B8C8D8; // 사이드바 컬러
+  --sidebar-muted-color: #b8c8d8; // 사이드바 컬러
   --sidebar-active-color: #ccddee;
   --sidebar-hover-bg: #262626;
   --sidebar-btn-bg: #232328;
@@ -146,8 +146,6 @@
       rgb(26, 26, 30)
     );
   }
-
-  
 
   /* stylelint-disable-next-line selector-id-pattern */
   #disqus_thread {
