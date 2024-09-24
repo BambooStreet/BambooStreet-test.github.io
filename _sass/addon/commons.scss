@@ -23,7 +23,7 @@ html {
     &[data-mode='light'] {
       @include light-scheme;
     }
-  } 
+  }
 }
 
 body {
@@ -32,7 +32,7 @@ body {
     env(safe-area-inset-bottom) env(safe-area-inset-left);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: $font-family-base;
+  font-family: 'Noto Sans KR', $font-family-base;
 }
 
 /* --- Typography --- */
@@ -201,8 +201,8 @@ i {
     line-height: inherit;
 
     @include label(inherit);
-    
-    color: #B8C8D8; // 파스텔 블루 색상
+
+    color: #b8c8d8; // 파스텔 블루 색상
   }
 
   .post-tag {
@@ -713,7 +713,7 @@ $btn-mb: 0.5rem;
   background: url('/assets/img/sidebar/별이빛나는밤에.jpg');
   background-size: auto;
   background-position: center;
-  
+
   /* border-right: 1px solid var(--sidebar-border-color); */
 
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -798,7 +798,7 @@ $btn-mb: 0.5rem;
     user-select: none;
 
     /* 색상 변경 */
-    
+
     /* color: var(--site-subtitle-color); */
     color: #b8c5d2;
   }
@@ -1088,10 +1088,9 @@ search {
   padding-bottom: 3rem;
 
   a {
-
     font-size: 1.4rem;
     line-height: 2.5rem;
-    
+
     &:hover {
       @extend %link-hover;
     }
@@ -1099,8 +1098,6 @@ search {
     @extend %link-color;
     @extend %no-bottom-border;
     @extend %heading;
-
-    
   }
 
   > article {

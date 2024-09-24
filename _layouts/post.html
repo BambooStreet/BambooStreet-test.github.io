@@ -8,7 +8,6 @@ tail_includes:
   - post-nav
   - comments
 ---
-
 {% include lang.html %}
 
 <article class="px-1">
@@ -31,22 +30,22 @@ tail_includes:
       {% endif %}
 
       {% comment %}
-      {% if page.image %}
-        {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
-        {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
-        {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
+        {% if page.image %}
+          {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
+          {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
+          {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
 
-        {% if page.image.lqip %}
-          {%- capture lqip -%}lqip="{{ page.image.lqip }}"{%- endcapture -%}
+          {% if page.image.lqip %}
+            {%- capture lqip -%}lqip="{{ page.image.lqip }}"{%- endcapture -%}
+          {% endif %}
+
+          <div class="mt-3 mb-3">
+            <img {{ src }} {{ class }} {{ alt }} w="1200" h="630" {{ lqip }}>
+            {%- if page.image.alt -%}
+              <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
+            {%- endif -%}
+          </div>
         {% endif %}
-
-        <div class="mt-3 mb-3">
-          <img {{ src }} {{ class }} {{ alt }} w="1200" h="630" {{ lqip }}>
-          {%- if page.image.alt -%}
-            <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
-          {%- endif -%}
-        </div>
-      {% endif %}
       {% endcomment %}
 
       <div class="d-flex justify-content-between">
@@ -57,9 +56,9 @@ tail_includes:
           {% elsif page.authors %}
             {% assign authors = page.authors %}
           {% endif %}
-          
+
           {% comment %}
-          {{ site.data.locales[lang].post.written_by }}
+            {{ site.data.locales[lang].post.written_by }}
           {% endcomment %}
 
           <em>
@@ -124,14 +123,15 @@ tail_includes:
             {{- tag -}}
           </a>
         {% endfor %}
-        <script src="https://utteranc.es/client.js"
-                repo="BambooStreet/BambooStreet.github.io"
-                issue-term="pathname"
-                label="comments"
-                theme="dark-blue"
-                crossorigin="anonymous"
-                async>
-        </script> 
+        <script
+          src="https://utteranc.es/client.js"
+          repo="BambooStreet/BambooStreet.github.io"
+          issue-term="pathname"
+          label="comments"
+          theme="dark-blue"
+          crossorigin="anonymous"
+          async
+        ></script>
       </div>
     {% endif %}
 
