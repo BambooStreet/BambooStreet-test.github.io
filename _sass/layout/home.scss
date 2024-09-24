@@ -30,7 +30,7 @@ h2 {
   .card {
     border: 0;
     background: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); // 그림자 추가로 카드 느낌 강화
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // 그림자 추가로 카드 느낌 강화
 
     %img-radius {
       border-radius: $base-radius $base-radius 0 0;
@@ -51,7 +51,6 @@ h2 {
         object-fit: cover; // 이미지 비율 유지
         filter: brightness(0.7); /* 밝기를 80%로 낮춤 */
         transition: filter 0.3s ease; /* 부드러운 전환 효과 추가 */
-
       }
 
       &:hover img {
@@ -248,5 +247,3 @@ h2 {
     }
   } /* .pagination */
 }
-
-
