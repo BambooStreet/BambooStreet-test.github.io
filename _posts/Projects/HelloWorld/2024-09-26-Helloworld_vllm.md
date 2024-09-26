@@ -4,7 +4,7 @@ author: BambooStreet
 date: 2024-09-26 11:31:00 +0800
 categories: [study]
 tags: []
-image: assets/img/posts/20240925/thumbnail.png
+image: assets/img/thumbnail/helloworld.png
 ---
 
 ## 실험 필요성?
