@@ -45,7 +45,7 @@ refactor: true
 <h2 class="category-title study">Studies and Projects</h2>
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% assign study_posts = posts | where_exp: 'post', "post.categories contains 'study'" %}
-  {% for post in study_posts limit: 8 %}
+  {% for post in study_posts limit: 12 %}
     <article class="card-wrapper card">
       <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
         {% assign card_body_col = '12' %}
