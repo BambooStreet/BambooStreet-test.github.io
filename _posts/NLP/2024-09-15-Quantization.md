@@ -4,7 +4,7 @@ author: BambooStreet
 date: 2024-09-15 11:31:00 +0800
 categories: [study]
 tags: []
-image: assets/img/posts/20240925/thumbnail.png
+image: assets/img/posts/20240915/32bit_8bit.png
 ---
 
 ## 개요
